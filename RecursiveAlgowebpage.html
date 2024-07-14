@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Algorithms</title>
+    <style>
+        body {
+            background-color: rgb(235, 242, 242);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .video {
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        <h1>Understanding Recursive Algorithms</h1>
+        <p>
+            Recursive algorithms are a powerful concept in computer science where a function calls itself
+            to solve smaller instances of the same problem. Understanding recursion is essential for solving complex problems with elegant solutions.
+        </p>
+        <p>
+            Recursive Algorithm is a problem-solving approach that solves a problem by solving smaller instances of the same problem. 
+            These algorithms make the process of coding certain tasks simpler and cleaner, improving the readability and understanding of the code.
+        </p>
+        <p>
+            <b>Advantages:</b>
+            <ul>
+                <li>Recursive algorithms make the code look clean and elegant.</li>
+                <li>Complex tasks can be broken down into simpler sub-problems using recursion.</li>
+                <li>Sequence generation is easier with recursion than using some nested iteration.</li>
+            </ul>
+        </p>
+        <p>
+            <b>Disadvantages:</b>
+            <ul>
+                <li>Sometimes the logic behind recursion is hard to follow through.</li>
+                <li>Recursive calls are expensive (inefficient) as they take up a lot of memory and time.</li>
+                <li>Recursive functions are hard to debug.</li>
+            </ul>
+        </p>
+        <p>
+            A common example of a recursive algorithm is the calculation of the Fibonacci sequence, where
+            each number is the sum of the two preceding ones. 
+        </p>
+        <p>
+            <img src="D:\DTLimages\fibonacci.png" alt="Code for obtaining fibonnaci series" width="300" height="200">
+
+        </p>
+        <p> Recursion call tree for obtaining fibonacci series of n=5: </p>
+
+        <div class="video">
+            <iframe width="500" height="300" src="D:\Python\media\videos\manimfibonacci\1080p60\FibonacciRecursionTree.mp4"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        
+        <p>
+            Another example is the factorial function,
+            which multiplies a series of descending positive integers.
+        </p>
+        <p>
+            <img src="D:\DTLimages\factorial.png" alt="Code for obtaining factorial of a number" width="300" height="200">
+        </p>
+        <p> Recursion call tree for finding factorial of 5: </p>
+        <div class="video">
+            <iframe width="500" height="300" src="D:\Python\media\videos\manimfact\1080p60\FactorialRecursionTree.mp4" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        
+        <p>
+            <b>Time Complexity analysis of Recursive Algorithms:</b>
+            <ol>
+                <li>Decide on the parameter indicating the input size</li>
+                <li>Identify the algorithm's basic operation</li>
+                <li>Check whether the number of times the basic operation executed depends only on the size of input. If it also depends
+                    on some additional property, then the worst and the average case efficiency must be investigated.
+                </li>
+                <li>Setup a recurrence relation with an appropriate base case (i.e initial condition) 
+                    for the number of times the basic operation is executed
+                </li>
+                <li>Solve the recurrence relation with appropriate methods to find time complexity</li>
+            </ol>
+        </p>
+        <p>
+            <b>There are 4 methods to solve a recurrence relation to analyze the time complexity:</b>
+            <ol>
+                <li>Substitution Method</li>
+                <li>Iteration Method</li>
+                <li>Recursion Tree Method</li>
+                <li>Master Method</li>
+            </ol>
+        </p>
+        
+        
+    </div>
+</body>
+</html>
